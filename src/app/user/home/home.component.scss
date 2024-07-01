@@ -1,0 +1,10 @@
+.hero-content-round-curve {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  background-color: var(--theme);
+  border-radius: 50%;
+}

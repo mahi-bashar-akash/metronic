@@ -92,3 +92,53 @@ body {
   }
 
 }
+
+.btn-theme {
+  background-color: var(--theme) !important;
+  color: var(--bs-white) !important;
+  transition: 0.3s all ease-in-out !important;
+
+  &:hover {
+    transition: 0.3s all ease-in-out !important;
+    background-color: var(--dark-theme) !important;
+    color: var(--bs-white) !important;
+  }
+
+}
+
+.btn-outline-theme {
+  border: 1px solid var(--theme) !important;
+  background-color: transparent !important;
+  color: var(--theme) !important;
+  transition: 0.3s all ease-in-out !important;
+
+  &:hover {
+    transition: 0.3s all ease-in-out !important;
+    background-color: var(--theme) !important;
+    color: var(--bs-white) !important;
+  }
+}
+
+.bg-theme {
+  background-color: var(--theme) !important;
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray) !important;
+}
+
+$iteration: 2560;
+
+$base-value: 1px;
+
+@for $i from 1 through $iteration {
+
+  .width-#{$i} {
+    width: $base-value * $i !important;
+  }
+
+  .height-#{$i} {
+    height: $base-value * $i !important;
+  }
+
+}
