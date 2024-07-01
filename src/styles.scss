@@ -142,3 +142,9 @@ $base-value: 1px;
   }
 
 }
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
