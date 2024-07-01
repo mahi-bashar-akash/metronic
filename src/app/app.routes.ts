@@ -1,8 +1,6 @@
 import {NgModule} from '@angular/core'
 import {RouterModule, Routes} from '@angular/router';
-
 /* * * * * Front layout * * * * */
-
 import {FrontLayoutComponent} from './user/layout/layout.component'
 
   import {FrontHomeComponent} from './user/home/home.component';
@@ -10,6 +8,8 @@ import {FrontLayoutComponent} from './user/layout/layout.component'
   import {FrontContactComponent} from './user/contact/contact.component';
   import {FrontBlogComponent} from './user/blog/blog.component';
   import {FrontSingleBlogComponent} from './user/single-blog/single-blog.component';
+  import {FrontServiceComponent} from './user/service/service.component';
+  import {FrontSingleServiceComponent} from './user/single-service/single-service.component';
   import {FrontShopComponent} from './user/shop/shop.component';
   import {FrontSingleProductComponent} from './user/single-product/single-product.component';
   import {FrontLoginComponent} from './user/login/login.component';
@@ -25,7 +25,6 @@ import {FrontLayoutComponent} from './user/layout/layout.component'
     import {FrontProfileSettingsComponent} from './user/profile-settings/profile-settings.component';
 
 /* * * * * Admin layout * * * * */
-
 import {AdminLayoutComponent} from "./admin/layout/layout.component";
   import {AdminDashboardComponent} from "./admin/dashboard/dashboard.component";
   import {AdminCalendarComponent} from "./admin/calendar/calendar.component";
@@ -51,6 +50,8 @@ export const routes: Routes = [
       {path: 'contact', component: FrontContactComponent},
       {path: 'blog', component: FrontBlogComponent},
       {path: 'single-blog', component: FrontSingleBlogComponent},
+      {path: 'service', component: FrontServiceComponent},
+      {path: 'single-service', component: FrontSingleServiceComponent},
       {path: 'shop', component: FrontShopComponent},
       {path: 'single-product', component: FrontSingleProductComponent},
       {path: 'login', component: FrontLoginComponent},

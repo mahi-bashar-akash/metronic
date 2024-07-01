@@ -1,0 +1,108 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-light py-3">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home" (click)="hideCollapse()">
+      Appie
+    </a>
+    <button class="navbar-toggler" type="button" (click)="showCollapse()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-end d-inline-block d-lg-none">
+          <button type="button" class="btn btn-close border-0 p-3 icon-close" (click)="hideCollapse()"></button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="hideCollapse()">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="hideCollapse()">
+            About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="hideCollapse()">
+            Contact Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/service" routerLinkActive="active" (click)="hideCollapse()">
+            Service
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active" (click)="hideCollapse()">
+            Blogs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shop" routerLinkActive="active" (click)="hideCollapse()">
+            Shop
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/wishlist" routerLinkActive="active" (click)="hideCollapse()">
+            Wishlist (03)
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active" (click)="hideCollapse()">
+            Cart (03)
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Authentication
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/login" routerLinkActive="active" (click)="hideCollapse()">
+                Login
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/registration" routerLinkActive="active" (click)="hideCollapse()">
+                Registration
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Profile
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/profile/details" routerLinkActive="active" (click)="hideCollapse()">
+                Details
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/profile/wishlist-history" routerLinkActive="active" (click)="hideCollapse()">
+                Wishlist History
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/profile/order-history" routerLinkActive="active" (click)="hideCollapse()">
+                Order History
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="dropdown-item" routerLink="/profile/settings" routerLinkActive="active" (click)="hideCollapse()">
+                Settings
+              </a>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" (click)="hideCollapse()">
+                Logout
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --theme: #ff2660;
+  --dark-theme: #c03855;
+  --light-gray: #6c757d;
+  --lightest-gray: #efeff3;
+  --linear-gradient: linear-gradient(127deg, #121e48c9 33%, rgba(255, 255, 255, 0) 100%);
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.line-height-2 {
+  line-height: 2;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-loading {
+  cursor: wait;
+}
+
+.truncate-to-1-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-to-2-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-to-3-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dropdown {
+
+  .dropdown-menu {
+    padding: 10px !important;
+    z-index: 999999999999;
+
+    .dropdown-item {
+      font-size: 14px !important;
+      color: var(--light-gray) !important;
+      background-color: transparent !important;
+      padding: 10px 20px !important;
+      transition: 0.3s all ease-in-out;
+      border-radius: 5px;
+
+      &:hover, &.active {
+        box-shadow: 0 0 8px 0 var(--bs-border-color) inset !important;
+        transition: 0.3s all ease-in-out;
+        background: var(--bs-light) !important;
+        color: var(--theme) !important;
+      }
+
+    }
+
+  }
+
+}
+
+.text-theme {
+  color: var(--theme) !important;
+}
+
+.text-light-gray {
+  color: var(--light-gray) !important;
+}
+
+.text-light-gray-hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--light-gray) !important;
+
+  &:hover {
+    transition: 0.3s all ease-in-out;
+    color: var(--theme) !important;
+  }
+
+}
